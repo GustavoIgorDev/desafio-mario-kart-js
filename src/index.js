@@ -44,7 +44,7 @@ rl.question("Jogador1, escolha o número do seu personagem: ", (resposta1) => {
 
     for(let i = 0; i < 5; i++){
         const bloco = pegarElementoRandom(blocos);
-        console.log(`Rodada ${i + 1}: o bloco é uma ${bloco}`);
+        console.log(`Rodada ${i + 1}: o bloco é um(a) ${bloco}`);
         const dadoP1 = Math.floor(Math.random() * 6) + 1;
         const dadoP2 = Math.floor(Math.random() * 6) + 1;
 
@@ -62,14 +62,14 @@ rl.question("Jogador1, escolha o número do seu personagem: ", (resposta1) => {
                     console.log(`${jogador1.nome} venceu o confronto! ${jogador2.nome} perdeu 1 ponto!`);
                     placarP2 -= 1;
                 } else {
-                    console.log(`${jogador1.nome} venceu o confronto! Mas ${jogador2.nome} já está com 0 ponto e não pode perder mais!`);
+                    console.log(`${jogador1.nome} venceu o confronto! Mas ${jogador2.nome} já está com 0 ponto(s) e não pode perder mais!`);
                 }
             } else if (totalP2 > totalP1) {
                 if (placarP1 > 0) {
                     console.log(`${jogador2.nome} venceu o confronto! ${jogador1.nome} perdeu 1 ponto!`);
                     placarP1 -= 1;
                 } else {
-                    console.log(`${jogador2.nome} venceu o confronto! Mas ${jogador1.nome} já está com 0 ponto e não pode perder mais!`);
+                    console.log(`${jogador2.nome} venceu o confronto! Mas ${jogador1.nome} já está com 0 ponto(s) e não pode perder mais!`);
                 }
             } else {
                 console.log(`${jogador1.nome} e ${jogador2.nome} empataram no confronto, ninguém perde pontos!`);
